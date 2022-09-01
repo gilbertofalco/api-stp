@@ -1,0 +1,36 @@
+Arguments: 
+  /usr/bin/node /usr/bin/yarn add index.js key.json
+
+PATH: 
+  /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/local/bin:/usr/lib/jvm/java-11-amazon-corretto/bin:/usr/local/bin:/usr/lib/jvm/java-11-amazon-corretto/bin
+
+Yarn version: 
+  1.22.18
+
+Node version: 
+  16.17.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/key.json: Not found
+      at Request.params.callback [as _callback] (/usr/lib/node_modules/yarn/lib/cli.js:66138:18)
+      at Request.self.callback (/usr/lib/node_modules/yarn/lib/cli.js:140883:22)
+      at Request.emit (node:events:513:28)
+      at Request.<anonymous> (/usr/lib/node_modules/yarn/lib/cli.js:141855:10)
+      at Request.emit (node:events:513:28)
+      at IncomingMessage.<anonymous> (/usr/lib/node_modules/yarn/lib/cli.js:141777:12)
+      at Object.onceWrapper (node:events:627:28)
+      at IncomingMessage.emit (node:events:525:35)
+      at endReadableNT (node:internal/streams/readable:1358:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
