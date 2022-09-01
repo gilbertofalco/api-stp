@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@netlify/build": "^27.16.1",
     "cors": "^2.8.5",
     "dotenv": "^16.0.2",
     "express": "^4.18.1",
@@ -7,11 +8,11 @@
     "firebase-admin": "^11.0.1",
     "nodemon": "^2.0.19"
   },
-  "scripts": {
-    
-  },
   "devDependencies": {
     "firebase-tools": "^11.8.0"
+  },
+  "scripts": {
+    "build": "webpack"
   },
   "name": "suenira-backend",
   "version": "1.0.0",
