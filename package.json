@@ -6,7 +6,8 @@
     "express": "^4.18.1",
     "firebase": "^9.9.3",
     "firebase-admin": "^11.0.1",
-    "nodemon": "^2.0.19"
+    "nodemon": "^2.0.19",
+    "webpack": "^5.74.0"
   },
   "devDependencies": {
     "firebase-tools": "^11.8.0"
