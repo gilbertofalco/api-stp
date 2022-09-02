@@ -1,24 +1,16 @@
 {
   "dependencies": {
-    "@netlify/build": "^27.16.1",
     "cors": "^2.8.5",
     "dotenv": "^16.0.2",
     "express": "^4.18.1",
-    "firebase": "^9.9.3",
+    "firebase": "^9.9.4",
     "firebase-admin": "^11.0.1",
     "nodemon": "^2.0.19",
-    "webpack": "^5.74.0",
-    "webpack-cli": "^4.10.0"
-  },
-  "devDependencies": {
-    "firebase-tools": "^11.8.0"
-  },
-  "scripts": {
-    "build": "webpack"
+    "serverless-http": "^3.0.2"
   },
   "name": "suenira-backend",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "./src/index.js",
   "repository": "https://github.com/gilbertofalco/api-stp.git",
   "author": "Gilberto Falco <gilberto.falco@outlook.com>",
   "license": "MIT"

@@ -1,6 +1,5 @@
 
-module.exports=
-{
+module.exports={
     "type": "service_account",
     "project_id": "db-stp",
     "private_key_id": process.env.KEY_PRIVATE_KEY_ID,
@@ -12,3 +11,5 @@ module.exports=
     "auth_provider_x509_cert_url": process.env.KEY_AUTH_PROVIDER,
     "client_x509_cert_url": process.env.KEY_CLI_CERT_URI
   }
+
+  // module.exports(key)

@@ -1,12 +1,16 @@
 require("dotenv").config();
 const express = require('express');
 const cors = require('cors');
+
 const app = express();
 
 const admin = require('firebase-admin')
 const key = require('./key.js')
 
 // const cors = require('cors');
+const PORT = process.env.PORT || 4000;
+
+app.listen(PORT)
 
 admin.initializeApp({
     credential: admin.credential.cert(key)
@@ -15,14 +19,22 @@ admin.initializeApp({
 
 const db = admin.firestore();
 
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }))
 app.use(cors())
 
-app.post('/create', async (req, res) => {
-    console.log(req.body)
+app.get('/', (req, res) => {
+    res.json({
+        "hello": "test"
+    })
+})
+
+app.post('/post', async (req, res) => {
+    
 
     try {
+        console.log(req.body)
         const id = req.body.email;
         const contactJson = {
             fullName: req.body.fullName,
@@ -41,7 +53,4 @@ app.post('/create', async (req, res) => {
 
 
 
-
-const PORT = process.env.PORT || 4000;
-
-app.listen(PORT)
+module.exports = app;
